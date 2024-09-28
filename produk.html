@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/big_search_bar.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/produk.css">
+    <link rel="stylesheet" href='css/lihat_produk.css'>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <div class="left-side-nav">
+            <img src="img/logo.jpg" alt="LOGO" style="height: 80%;">
+            <h1>AGROPEDIA</h1>
+        </div>
+        <div class="right-side-nav" id="right-side-nav">
+            <button class='h-b' id='h-b'><div></div><div></div><div></div></button>
+            <img src="img/wave.svg" alt="wave" class="wave-nav">
+            <img src="img/wave-1.svg" alt="wave" class="wave-nav-2">
+            <div class="menu" id="menu">
+                <a href="index.html">
+                    Beranda
+                </a>
+                <a href="produk.html">
+                    Produk
+                </a>
+                <a href="baca.html">
+                    Baca
+                </a>
+                <button id="tombol-masuk" href="">
+                    Masuk
+                </button>
+                <button id="tombol-daftar" href="">
+                    Daftar
+                </button>
+                <button type="button" id="back" class="back">
+                    Kembali
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="section-1">
+        <div class="big-search-bar">
+            <img src="img/search.svg" alt="">
+            <input id="cari" placeholder="Cari Produk" type="text">
+            <button id="cari" class="blue-btn" onclick="search()">Cari</button>
+        </div>
+        <div class="filter-container">
+            <button id="bibit-button" onclick="findBibit()" class="btn">Bibit</button>
+            <button id="pupuk-button" onclick="findPupuk()" class="btn">Pupuk</button>
+            <button id="hasil-panen-button" onclick="findHasilPanen()" class="btn">Hasil Panen</button>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="produk-container" id="produk-container">
+            
+        </div>
+        <div id="pagination" class="pagination">
+            <button  id="prev-button" class="prev-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+            <button id="page-link1" class="page-link active">1</button>
+            <button id="page-link2" class="page-link">2</button>
+            <button id="next-button" class="next-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-column">
+            <h3>Agropedia</h3>
+            <p>Telang Nisa Blok A no 1, Kamal Bangkalan</p>
+        </div>
+        <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="baca.html">Baca</a></li>
+                <li><a href="https://www.freepik.com/">freepik</a></li>
+                <li><a href="https://id.pinterest.com/99designs/">99designs</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Hubungi kami</h3>
+            <div class="message-area">
+                <p>081928381398</p>
+                <a href="#">email@email.com</a>
+            </div>
+    </div>
+    <div class="modal login-modal" id="login-modal" style="scale: 0;">
+        <form action="indexLogin.html" method="post">
+            <h2>MASUK</h2>
+            <div class="input-field">
+                <p>Email / nomer handphone</p>
+                <input type="text" placeholder="Masukan email / nomer-handphone" name="email">
+            </div>
+            <div class="input-field">
+                <p>Password</p>
+                <input type="password" placeholder="Masukan password" name="password">
+            </div>
+            <input type="hidden" name="_token"/>
+            <button type="submit"> Masuk </button>
+        </form>
+    </div>
+
+    <div class="modal daftar-modal" id="daftar-modal" style="scale: 0;">
+        <form action="" method="post">
+            <h2>DAFTAR</h2>
+            <div class="input-field" ">
+                <p>Email / nomer handphone</p>
+                <input type="text" name="email" placeholder="Masukan email / nomer-handphone">
+            </div>
+            <div class="input-field">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Masukan password">
+            </div>
+            <div class="input-field">
+                <p>Konfirmasi password</p>
+                <input type="password" name="confirm_pass" placeholder="Konfirmasi password">
+            </div>
+            <input type="hidden" name="_token"/>
+            <button type="submit"> Daftar </button>
+        </form>
+    </div>
+    <script src="js/produk.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/notLogin.js"></script>
+</body>
+</html>

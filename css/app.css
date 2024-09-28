@@ -1,0 +1,38 @@
+@font-face {
+    font-family: inter;
+    src: url('../fonts/static/Inter_24pt-Bold.ttf');
+}
+
+@font-face {
+    font-family: inter-medium;
+    src: url('../fonts/static/Inter_18pt-Medium.ttf')
+}
+
+@font-face {
+    font-family: inter-light;
+    src: url('../fonts/static/Inter_18pt-Light.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: inter-medium;
+    overflow-x: hidden;
+}
+
+.blue-btn {
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgb(128, 81, 245);
+    color: white;
+    font-family: inter;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px -10px gray;
+    
+}
+
+.blue-btn:hover {
+    background-color: rgb(59, 30, 134);
+}
+

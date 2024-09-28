@@ -1,0 +1,102 @@
+
+.section-1 {
+    width: 100%;
+    height: fit-content;
+    min-height: 0vh;
+    padding-top: 110px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.section-2 {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.bacaan-container {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+
+.bacaan {
+    background: rgb(250, 237, 237);
+    height: fit-content;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.bacaan > img {
+    width: 100%;
+    filter: brightness(0.9);
+}
+
+.bacaan > button {
+    margin-left: 10px;
+    border: none;
+}
+
+.title-bacaan {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: inter;
+    color: #333333;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0px;    
+}
+
+.tanggal-bacaan {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: inter-medium;
+    color: #333333;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.bacaan > .love-container {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: inter-medium;
+    color: #333333;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .bacaan-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bacaan-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-2, .section-1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .bacaan-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

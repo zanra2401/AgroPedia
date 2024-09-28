@@ -1,0 +1,91 @@
+@media screen and (min-width: 1024px)
+{
+    .card:hover {
+        scale: 1.2;
+    }
+
+    .icon > div:hover {
+        scale: 1.5;   
+        cursor: pointer;
+    }
+}
+
+.icon > div {
+    color: #dddddd;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    border: 1px gray solid;
+    height: fit-content;
+    display: grid;
+    flex-direction: column;
+    transition: transform ease 1;
+    overflow: hidden;
+}
+
+
+.tombol-lihat {
+    align-self: self-end;
+    text-align: center;
+    background-color: rgb(128, 81, 245);
+    padding: 10px;
+    color: white;
+    scale: 0;
+    transition:  ease 0.1s;
+    margin-top: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+.card > h3, .card > p {
+    margin: 2px;
+    margin-left: 10px;
+}
+
+.card > p {
+    margin-bottom: 20px;
+    font-family: inter-light;
+    color: #333333;
+}
+
+.card:hover .tombol-lihat {
+    scale: 1;
+}
+
+.icon {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.icon > div {
+    margin-left: 5px;
+}
+
+
+
+.gambar-icon {
+    width: 100%;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    justify-self: center;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .tombol-lihat {
+        scale: 1;
+    }
+    
+}
+
+

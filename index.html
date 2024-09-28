@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="libs/css/swiper.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/beranda.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href='css/lihat_produk.css'>
+    <link rel="stylesheet" href="css/bacaan.css">
+
+    <title>AGRO</title>
+</head>
+<body>  
+    <nav class="navigation-bar">
+        <div class="left-side-nav">
+            <img src="img/logo.jpg" alt="LOGO" style="height: 80%;">
+            <h1>AGROPEDIA</h1>
+        </div>
+        <div class="right-side-nav" id="right-side-nav">
+            <button class='h-b' id='h-b'><div></div><div></div><div></div></button>
+            <img src="img/wave.svg" alt="wave" class="wave-nav">
+            <img src="img/wave-1.svg" alt="wave" class="wave-nav-2">
+            <div class="menu" id="menu">
+                <a href="index.html">
+                    Beranda
+                </a>
+                <a href="produk.html">
+                    Produk
+                </a>
+                <a href="baca.html">
+                    Baca
+                </a>
+                <button id="tombol-masuk" href="">
+                    Masuk
+                </button>
+                <button id="tombol-daftar" href="">
+                    Daftar
+                </button>
+                <button type="button" id="back" class="back">
+                    Kembali
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="section-1">
+            <div class="left-s1">
+                <h1>
+                    TINGKATKAN HASIL PANEN ANDA BERSAMA KAMI
+                </h1>
+                <p>
+                    Panen melimpah, kualitas terjamin. 
+                    Dapatkan bibit unggul dan pupuk organik terbaik dari kami. 
+                    Jadikan kami mitra pertanian Anda. Kami siap membeli hasil panen Anda dengan harga yang menguntungkan.
+                    <b>Hubungi Kami untuk menawarkan hasil panen anda</b>
+                </p>
+                <div class="search-bar">
+                    <img src="img/search.svg" alt="">   
+                    <input type="text" placeholder="Cari Produk">
+                    <button onclick="cari(this)">CARI</button>
+                </div>
+            </div>
+            <div class="right-s1">
+                <img src="img/orangpanenpadi.jpg" alt="">
+            </div>
+    </section>
+
+    <section class="section-2">
+        <h1 class="title-section"># Produk Unggulan Kami</h1>
+        <div id="product_container" class="produk_container">
+            
+        </div>
+        <a href="produk.html" class="blue-btn">Lihak Lebih Banyak</a>
+    </section>
+    
+    <section class="section-3">
+        <h1 class="title-section"># Tips Pertanian</h1>
+        <div class="bacaan-container swiper">
+            <div class="bacaan-wrapper swiper-wrapper" id="bacaan-wrapper"> 
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <a href="baca.html" class="blue-btn">Baca Lebih Banyak</a>
+    </section>
+
+    
+    <div class="footer">
+        <div class="footer-column">
+            <h3>Agropedia</h3>
+            <p>Telang Nisa Blok A no 1, Kamal Bangkalan</p>
+        </div>
+        <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="baca.html">Baca</a></li>
+                <li><a href="https://www.freepik.com/">freepik</a></li>
+                <li><a href="https://id.pinterest.com/99designs/">99designs</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Hubungi kami</h3>
+            <div class="message-area">
+                <p>081928381398</p>
+                <a href="#">email@email.com</a>
+            </div>
+    </div>
+   
+    </section>
+    <div class="modal login-modal" id="login-modal" style="scale: 0;">
+        <form action="indexLogin.html" method="post">
+            <h2>MASUK</h2>
+            <div class="input-field">
+                <p>Email / nomer handphone</p>
+                <input type="text" placeholder="Masukan email / nomer-handphone" name="email">
+            </div>
+            <div class="input-field">
+                <p>Password</p>
+                <input type="password" placeholder="Masukan password" name="password">
+            </div>
+            <input type="hidden" name="_token"/>
+            <button type="submit"> Masuk </button>
+        </form>
+    </div>
+
+    <div class="modal daftar-modal" id="daftar-modal" style="scale: 0;">
+        <form action="" method="post">
+            <h2>DAFTAR</h2>
+            <div class="input-field" ">
+                <p>Email / nomer handphone</p>
+                <input type="text" name="email" placeholder="Masukan email / nomer-handphone">
+            </div>
+            <div class="input-field">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Masukan password">
+            </div>
+            <div class="input-field">
+                <p>Konfirmasi password</p>
+                <input type="password" name="confirm_pass" placeholder="Konfirmasi password">
+            </div>
+            <input type="hidden" name="_token"/>
+            <button type="submit"> Daftar </button>
+        </form>
+    </div>
+    <script src="js/beranda.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src='libs/js/swiper.js'></script>
+    <script src='libs/js/jquery.js'></script>
+    <script>
+            const swiper = new Swiper('.swiper', {
+                
+                loop: true,
+                spaceBetween: 30,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 4
+                    }
+                }
+                });
+    </script>
+    <script src="js/notLogin.js"></script>
+</body>
+</html>

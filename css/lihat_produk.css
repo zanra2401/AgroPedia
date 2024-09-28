@@ -1,0 +1,189 @@
+.container {
+    width: 100%;
+    padding: 20px;
+    padding-left: 10%;
+    margin-top: 100px;
+    padding-right: 10%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+}
+
+.review h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.review p:last-child {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.section-produk {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 150px;
+}
+
+.container-1 {
+    display: flex;
+    height: 70vh;
+    margin-top: 20px;
+}
+
+.gambar-produk {
+    height: 70vh;
+    aspect-ratio: 1/1;
+    background-color: black;
+}
+
+.kuan > input {
+    margin: 0px;    
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.kuan {
+    position: absolute;
+    bottom: 70px;
+}
+
+#kuantitas-input {
+    margin: 0px;
+}
+
+.kuan > button {
+    border: gray 1px solid;
+    border-radius: 2px;
+    margin-right: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.info {
+    margin-left: 30px;
+    font-family: inter;
+    color: #333333;
+    height: 100%;
+    position: relative;
+    padding: 0px;
+}
+
+.info > h1 {
+    margin: 0px;
+}
+
+.harga {
+    font-size: 24px;
+    color: rgb(128, 81, 245);
+}
+
+.tombol-submit {
+    margin-top: 20px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
+
+.masukan-keranjang, .beli-sekarang {
+    cursor: pointer;
+    margin-right: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+.masukan-keranjang {
+    border: 1px rgb(128, 81, 245) solid;
+    border-radius: 4px;
+    color: rgb(128, 81, 245);
+    font-family: inter;
+}
+
+.beli-sekarang {
+    background-color: rgb(128, 81, 245);
+    color: white;
+    font-family: inter;
+    border: none;
+    border-radius: 4px;
+}
+
+@media  screen and (max-width: 926px) {
+    .container-1 {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .info {
+        padding: 0px;
+        margin: 0px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info > h1 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .tombol-submit {
+        margin-bottom: 100px;
+        position: static;
+    }
+
+    .gambar-produk {
+        height: auto;
+        width: 100%;
+    }
+
+    .kuan {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-produk {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .review {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
