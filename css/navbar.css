@@ -441,6 +441,7 @@
         position: fixed;
         padding: 10%;
         background: white;
+        left: 0;
     }
 
 }
