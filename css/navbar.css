@@ -168,7 +168,7 @@
         transform-origin: 0 0;
     }
     
-    .modal > form {
+    .modal > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -177,7 +177,7 @@
         width: 100%;
     }
     
-    .modal > form > div,  .modal > form > button {
+    .modal > div > div,  .modal > div > a {
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -186,22 +186,24 @@
         margin-bottom: 10px;
     }
     
-    .modal > form > button {
+    .modal > div > a {
         padding: 10px;
         background: #6FAC2D;
         border: none;
         border-radius: 4px;
         font-family: inter;
         color: white;
+        text-decoration: none;
+        box-sizing: border-box;
     }
     
-    .modal > form > h2 {
+    .modal > div > h2 {
         color: #333333;
         margin: 20px;
     }
     
     
-    .modal > form > div > input{
+    .modal > div > div > input{
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
@@ -212,13 +214,13 @@
         font-size: 14px;
     }
     
-    .modal > form > p {
+    .modal > div > p {
         font-size: 14px;
         font-family: inter-medium;
         margin: 4px;
     }
     
-    .modal > form > p > button {
+    .modal > div > p > button {
         background: none;
         border: none;
         font-family: inter;
@@ -323,7 +325,7 @@
         display: block;
     }
 
-    .modal > form {
+    .modal > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -332,7 +334,7 @@
         width: 100%;
     }
 
-    .modal > form > div,  .modal > form > button {
+    .modal > div > div,  .modal > div > a {
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -341,22 +343,24 @@
         margin-bottom: 10px;
     }
     
-    .modal > form > button {
+    .modal > div > a {
         padding: 10px;
         background: #6FAC2D;
         border: none;
         border-radius: 4px;
         font-family: inter;
         color: white;
+        text-decoration: none;
+        box-sizing: border-box;
     }
     
-    .modal > form > h2 {
+    .modal > div > h2 {
         color: #333333;
         margin: 20px;
     }
     
     
-    .modal > form > div > input{
+    .modal > div > div > input{
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
@@ -367,13 +371,13 @@
         font-size: 14px;
     }
     
-    .modal > form > p {
+    .modal > div > p {
         font-size: 14px;
         font-family: inter-medium;
         margin: 4px;
     }
     
-    .modal > form > p > button {
+    .modal > div > p > a {
         background: none;
         border: none;
         font-family: inter;

@@ -156,7 +156,7 @@ function baca(element)
                 <li><a href="produk.html">Produk</a></li>
                 <li><a href="baca.html">Baca</a></li>
                 <li><a href="https://www.freepik.com/">freepik</a></li>
-                                <li><a href="https://id.pinterest.com/99designs/">99designs</a></li>
+                <li><a href="https://id.pinterest.com/99designs/">99designs</a></li>
 
             </ul>
         </div>

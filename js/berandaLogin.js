@@ -156,7 +156,7 @@ for (let i = 0; i < 10; i++)
 function cari(element) 
 {
     let cariS = element.parentElement.children[1].value
-    window.location.href = "produk.html?cari=" + cariS;
+    window.location.href = "produkLogin.html?cari=" + cariS;
 }
 
 productUnggulan.innerHTML = cards;
@@ -291,7 +291,7 @@ function lihat(element)
                 <li><a href="baca.html">Baca</a></li>
                 <li><a href="https://www.freepik.com/">freepik</a></li>
                                 <li><a href="https://id.pinterest.com/99designs/">99designs</a></li>
-
+s
             </ul>
         </div>
         <div class="footer-column">
