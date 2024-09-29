@@ -26,26 +26,26 @@ tombol masuk dan daftar akan hilang dan tombol profile akan muncul jika anda ber
 **DISCLAIMER:** Fitur ini hanya gambaran bukan fitur keranjang atau favorite asli  
 jika anda masih di page yang belum login ketika anda click tombol keranjang atau favorit akan memunculkan pop up login jika anda sudah berada pada page yang sudah login  
 maka tombol akan berubah warna menjadi hijau
-<img width="826" alt="image" src="https://github.com/user-attachments/assets/2de224df-8174-4a98-a72e-952a1a5dc279">  
-<img width="956" alt="image" src="https://github.com/user-attachments/assets/b4b52a06-5cc0-4715-a021-3ab636b46d58">
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/2de224df-8174-4a98-a72e-952a1a5dc279">  
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/b4b52a06-5cc0-4715-a021-3ab636b46d58">
 
 ### Cari Produk di Beranda
 masukan input pada input Cari Produk lalu klik Cari, anda akan pindah ke page produk dengan barang yang anda cari, jika anda mencari items yang tidak tersedia akan menampilkan ilustrasi file not found  
-<img width="947" alt="image" src="https://github.com/user-attachments/assets/c80329d4-d49f-4481-adfa-8fdc0bb08ffd">
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/c80329d4-d49f-4481-adfa-8fdc0bb08ffd">
 
 ### Cari Produk di Produk page
 masukan input yang anda inginkan di box input untuk mencari items yang anda cari, jika anda mencari items yang tidak tersedia akan menampilkan ilustrasi file not found  
-<img width="940" alt="image" src="https://github.com/user-attachments/assets/37aa84bf-2a5a-468b-bfc4-42508cacbae3">
-<img width="920" alt="image" src="https://github.com/user-attachments/assets/1ccc58a8-8ac9-4d7d-a4ea-359ba9e80461">
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/37aa84bf-2a5a-468b-bfc4-42508cacbae3">
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/1ccc58a8-8ac9-4d7d-a4ea-359ba9e80461">
 
 ### Filter Produk
 anda bisa melakukan filter, anda dapat memilih items apa yang ingin anda tampilkan  
-<img width="937" alt="image" src="https://github.com/user-attachments/assets/4dec8316-023f-4b4e-b4b2-1d87fa488203">
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/4dec8316-023f-4b4e-b4b2-1d87fa488203">
 
 ### Lihat item
 anda bisa melihat detail item yang tersedia  
-<img width="958" alt="image" src="https://github.com/user-attachments/assets/4a4a2dd8-3923-42f7-a52a-096233b0eb87">
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/e301d089-c3c4-48d2-8ca4-9811e0c6051f">
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/4a4a2dd8-3923-42f7-a52a-096233b0eb87">
+<img width="512" alt="image" src="https://github.com/user-attachments/assets/e301d089-c3c4-48d2-8ca4-9811e0c6051f">
 
 
 
