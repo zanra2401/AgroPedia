@@ -116,7 +116,7 @@ function baca(element)
                 <a href="baca.html">
                     Baca
                 </a>
-                 <a id="tombol-profile" href="">
+                 <a id="tombol-profile" href="profile.html">
                     Profile
                 </a>
                 <button  type="button" id="back" class="back">

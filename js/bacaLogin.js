@@ -322,7 +322,7 @@ function search()
         bacaan_container.classList.remove("not-found")
         bacaan_container.classList.add("bacaan-container");
         bacaan_container.innerHTML = bacaan_list
-    }}
+    }s}
 
 
 function lovePlus(element) {
