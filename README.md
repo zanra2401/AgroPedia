@@ -2,7 +2,7 @@
 
 ## Cara menjalankan website di local 
 - Unduh source code nya di computer anda: bisa langsung mengunduhnya di github repo ini atau clone repo ini dengan `git clone https://github.com/zanra2401/AgroPedia.git`  
-- setelah mendownload extract lalu buka folder dan jalankan index.html di browser jika anda meclone repo ini tinggal pindah directory ke folder hasil clone dan buka index.html di browser
+- setelah mendownload extract lalu buka folder dan jalankan index.html di browser jika anda meclone repo ini tinggal pindah directory ke folder hasil clone dan buka index.html di browser dengan cara click dua kali file nya
 
 ## Cara menggunakan website
 ### menu
