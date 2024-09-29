@@ -186,20 +186,23 @@ function lihat(element)
                   <a href="baca.html">
                       Baca
                   </a>
-                  <button id="tombol-masuk" href="">
-                      Masuk
-                  </button>
-                  <button id="tombol-daftar" href="">
-                      Daftar
-                  </button>
-                  <button type="button" id="back" class="back">
-                      Kembali
-                  </button>
+                  <a id="tombol-profile" href="profile.html">
+                    Profile
+                </a>
+                <button type="button" id="back" class="back">
+                    Kembali
+                </button>
+                <button style="display: none;" id="tombol-masuk" href="">
+                    Masuk
+                </button>
+                <button style="display: none;" id="tombol-daftar" href="">
+                    Daftar
+                </button>
               </div>
           </div>
       </nav>
       <section class="section-produk">
-          <a href="produk.html" class="blue-btn">Kembali</a>
+          <a href="produkLogin.html" class="blue-btn">Kembali</a>
           <div class="container-1">
               <img class="gambar-produk" src="${page_produk[indeks_produk]["gambar"]}"  />
               <div class="info">
@@ -216,8 +219,8 @@ function lihat(element)
                           <button id="button-add" onclick="tambah()" type="button">+</button>
                       </div>
                       <div class="tombol-submit">
-                          <button onclick="love()" class="masukan-keranjang">Masukan Keranjang</button>
-                          <button onclick="love()" class="beli-sekarang">Beli Sekarang</button>
+                          <button class="masukan-keranjang">Masukan Keranjang</button>
+                          <button class="beli-sekarang">Beli Sekarang</button>
                       </div>
                   </div>
               </div>
@@ -300,42 +303,43 @@ s
                 <p>081928381398</p>
                 <a href="#">email@email.com</a>
             </div>
+        </div>
     </div>
   <div class="modal login-modal" id="login-modal" style="scale: 0;">
-      <form action="/user/login" method="post">
-          <h2>MASUK</h2>
-          <div class="input-field">
-              <p>Email / nomer handphone</p>
-              <input type="text" placeholder="Masukan email / nomer-handphone" name="email">
-          </div>
-          <div class="input-field">
-              <p>Password</p>
-              <input type="password" placeholder="Masukan password" name="password">
-          </div>
-          <input type="hidden" name="_token"/>
-          <button type="submit"> Masuk </button>
-      </form>
-  </div>
+        <div action="/user/login" method="post">
+            <h2>MASUK</h2>
+            <div class="input-field">
+                <p>Email / nomer handphone</p>
+                <input type="text" placeholder="Masukan email / nomer-handphone" name="email">
+            </div>
+            <div class="input-field">
+                <p>Password</p>
+                <input type="password" placeholder="Masukan password" name="password">
+            </div>
+            <input type="hidden" name="_token"/>
+            <a href="indexLogin.html"> Masuk </a>
+        </div>
+    </div>
 
-  <div class="modal daftar-modal" id="daftar-modal" style="scale: 0;">
-      <form action="/user/buat-akun" method="post">
-          <h2>DAFTAR</h2>
-          <div class="input-field" ">
-              <p>Email / nomer handphone</p>
-              <input type="text" name="email" placeholder="Masukan email / nomer-handphone">
-          </div>
-          <div class="input-field">
-              <p>Password</p>
-              <input type="password" name="password" placeholder="Masukan password">
-          </div>
-          <div class="input-field">
-              <p>Konfirmasi password</p>
-              <input type="password" name="confirm_pass" placeholder="Konfirmasi password">
-          </div>
-          <input type="hidden" name="_token"/>
-          <button type="submit"> Daftar </button>
-      </form>
-  </div>
+    <div class="modal daftar-modal" id="daftar-modal" style="scale: 0;">
+        <div action="/user/buat-akun" method="post">
+            <h2>DAFTAR</h2>
+            <div class="input-field" ">
+                <p>Email / nomer handphone</p>
+                <input type="text" name="email" placeholder="Masukan email / nomer-handphone">
+            </div>
+            <div class="input-field">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Masukan password">
+            </div>
+            <div class="input-field">
+                <p>Konfirmasi password</p>
+                <input type="password" name="confirm_pass" placeholder="Konfirmasi password">
+            </div>
+            <input type="hidden" name="_token"/>
+            <a href=""> Daftar </a>
+        </div>
+    </div>
       </div>`
       
       document.getElementsByTagName("body")[0].innerHTML = overrider
@@ -441,14 +445,17 @@ function baca(element)
                 <a href="baca.html">
                     Baca
                 </a>
-                <button  id="tombol-masuk" href="">
+                <a id="tombol-profile" href="profile.html">
+                    Profile
+                </a>
+                <button type="button" id="back" class="back">
+                    Kembali
+                </button>
+                <button style="display: none;" id="tombol-masuk" href="">
                     Masuk
                 </button>
-                <button  id="tombol-daftar" href="">
+                <button style="display: none;" id="tombol-daftar" href="">
                     Daftar
-                </button>
-                <button  type="button" id="back" class="back">
-                    Kembali
                 </button>
             </div>
         </div>
@@ -494,10 +501,11 @@ function baca(element)
                 <p>081928381398</p>
                 <a href="#">email@email.com</a>
             </div>
+        </div>
     </div>
     </div>
     <div class="modal login-modal" id="login-modal" style="scale: 0;">
-        <form action="/user/login" method="post">
+        <div action="/user/login" method="post">
             <h2>MASUK</h2>
             <div class="input-field">
                 <p>Email / nomer handphone</p>
@@ -508,12 +516,12 @@ function baca(element)
                 <input type="password" placeholder="Masukan password" name="password">
             </div>
             <input type="hidden" name="_token"/>
-            <button type="submit"> Masuk </button>
-        </form>
+            <a href="indexLogin.html"> Masuk </a>
+        </div>
     </div>
 
     <div class="modal daftar-modal" id="daftar-modal" style="scale: 0;">
-        <form action="/user/buat-akun" method="post">
+        <div action="/user/buat-akun" method="post">
             <h2>DAFTAR</h2>
             <div class="input-field" ">
                 <p>Email / nomer handphone</p>
@@ -528,8 +536,8 @@ function baca(element)
                 <input type="password" name="confirm_pass" placeholder="Konfirmasi password">
             </div>
             <input type="hidden" name="_token"/>
-            <button type="submit"> Daftar </button>
-        </form>
+            <a href=""> Daftar </a>
+        </div>
     </div>
     <script src="js/navbar.js"></script>
     `

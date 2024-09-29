@@ -212,6 +212,8 @@ function findType(type){
         }
         indeks_produk += 1;
     });
+    product_container.classList.remove("not-found")
+    product_container.classList.add("produk-container");
     product_container.innerHTML = produk
 }
 
@@ -237,7 +239,18 @@ function search() {
         }
         indeks_produk += 1;
     });
-    product_container.innerHTML = produk
+    if (produk.length == 0) {
+        product_container.classList.remove("produk-container");
+        product_container.classList.add("not-found")
+        product_container.innerHTML = `<img style="width: 100%; max-width: 500px;" src="img/no-found.jpg" alt="not found" />`;
+    } else {
+        product_container.classList.remove("not-found")
+        product_container.classList.add("produk-container");
+        product_container.innerHTML = produk
+    }
+    bibit_button.classList.remove("filter-active")
+    pupuk_button.classList.remove("filter-active")
+    hasil_panen_button.classList.remove("filter-active")
     pagination.style.display = "none";
 }
 
@@ -358,7 +371,18 @@ if (myParam)
         }
         indeks_produk += 1;
     });
-    product_container.innerHTML = produk
+    if (produk.length == 0) {
+        product_container.classList.remove("produk-container");
+        product_container.classList.add("not-found")
+        product_container.innerHTML = `<img style="width: 100%; max-width: 500px;" src="img/no-found.jpg" alt="not found" />`;
+    } else {
+        product_container.classList.remove("not-found")
+        product_container.classList.add("produk-container");
+        product_container.innerHTML = produk
+    }
+    bibit_button.classList.remove("filter-active")
+    pupuk_button.classList.remove("filter-active")
+    hasil_panen_button.classList.remove("filter-active")
     pagination.style.display = "none";
 }
 
@@ -500,9 +524,10 @@ function lihat(element)
                 <p>081928381398</p>
                 <a href="#">email@email.com</a>
             </div>
+        </div>
     </div>
     <div class="modal login-modal" id="login-modal" style="scale: 0;">
-        <form action="/user/login" method="post">
+        <div action="/user/login" method="post">
             <h2>MASUK</h2>
             <div class="input-field">
                 <p>Email / nomer handphone</p>
@@ -513,12 +538,12 @@ function lihat(element)
                 <input type="password" placeholder="Masukan password" name="password">
             </div>
             <input type="hidden" name="_token"/>
-            <button type="submit"> Masuk </button>
-        </form>
+            <a href="indexLogin.html"> Masuk </a>
+        </div>
     </div>
 
     <div class="modal daftar-modal" id="daftar-modal" style="scale: 0;">
-        <form action="/user/buat-akun" method="post">
+        <div action="/user/buat-akun" method="post">
             <h2>DAFTAR</h2>
             <div class="input-field" ">
                 <p>Email / nomer handphone</p>
@@ -533,8 +558,8 @@ function lihat(element)
                 <input type="password" name="confirm_pass" placeholder="Konfirmasi password">
             </div>
             <input type="hidden" name="_token"/>
-            <button type="submit"> Daftar </button>
-        </form>
+            <a href=""> Daftar </a>
+        </div>
     </div>
         </div>`
         

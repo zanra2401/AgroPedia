@@ -29,6 +29,12 @@
     justify-content: space-between;
 }
 
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .bacaan {
     background: rgb(250, 237, 237);
     height: fit-content;

@@ -166,10 +166,11 @@ function baca(element)
                 <p>081928381398</p>
                 <a href="#">email@email.com</a>
             </div>
+        </div>
     </div>
     </div>
     <div class="modal login-modal" id="login-modal" style="scale: 0;">
-        <form action="/user/login" method="post">
+        <div action="/user/login" method="post">
             <h2>MASUK</h2>
             <div class="input-field">
                 <p>Email / nomer handphone</p>
@@ -180,12 +181,12 @@ function baca(element)
                 <input type="password" placeholder="Masukan password" name="password">
             </div>
             <input type="hidden" name="_token"/>
-            <button type="submit"> Masuk </button>
-        </form>
+            <a href="indexLogin.html"> Masuk </a>
+        </div>
     </div>
 
     <div class="modal daftar-modal" id="daftar-modal" style="scale: 0;">
-        <form action="/user/buat-akun" method="post">
+        <div action="/user/buat-akun" method="post">
             <h2>DAFTAR</h2>
             <div class="input-field" ">
                 <p>Email / nomer handphone</p>
@@ -200,8 +201,8 @@ function baca(element)
                 <input type="password" name="confirm_pass" placeholder="Konfirmasi password">
             </div>
             <input type="hidden" name="_token"/>
-            <button type="submit"> Daftar </button>
-        </form>
+            <a href=""> Daftar </a>
+        </div>
     </div>
     <script src="js/navbar.js"></script>
     `
@@ -303,7 +304,15 @@ function search()
         }
         indeks_bacaan += 1;
     });
-    bacaan_container.innerHTML = bacaan_list;
+    if (bacaan_list.length == 0) {
+        bacaan_container.classList.remove("bacaan-container");
+        bacaan_container.classList.add("not-found")
+        bacaan_container.innerHTML = `<img style="width: 100%; max-width: 500px;" src="img/no-found.jpg" alt="not found" />`;
+    } else {
+        bacaan_container.classList.remove("not-found")
+        bacaan_container.classList.add("bacaan-container");
+        bacaan_container.innerHTML = bacaan_list
+    }
 }
 
 
