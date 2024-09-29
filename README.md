@@ -47,6 +47,15 @@ anda bisa melihat detail item yang tersedia
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/4a4a2dd8-3923-42f7-a52a-096233b0eb87">
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/e301d089-c3c4-48d2-8ca4-9811e0c6051f">
 
+### Masukan keranjang dan Beli Sekarang
+**DISCLAIMER:** Fitur ini hanya gambaran bukan fitur masukan keranjang dan beli sekarang asli
+jika anda masih di page yang belum login ketika anda click tombol masukan keranjang atau beli sekarang tidak akan terjadi apa".
+
+### Jumlah Stok
+
+
+
+
 
 
 
