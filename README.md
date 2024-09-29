@@ -1,7 +1,7 @@
 # AgroPedia
 
-## Link web statis  
-[AGROPEDIA]()
+## Link web statis AGROPEDIA  
+[AGROPEDIA](https://zanra2401.github.io/AgroPedia/)
 
 ## Cara menjalankan website di local 
 - Unduh source code nya di computer anda: bisa langsung mengunduhnya di github repo ini atau clone repo ini dengan `git clone https://github.com/zanra2401/AgroPedia.git`  
