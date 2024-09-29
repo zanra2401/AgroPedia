@@ -6,7 +6,7 @@
 
 ## Cara menggunakan website
 ### menu
-di kelebaran tertentu menu akan hilang dan di gantikan dengan hamburger button, click hamburger button untuk menampilkan menu yang hilang
+di kelebaran tertentu menu akan hilang dan di gantikan dengan hamburger button, click hamburger button untuk menampilkan menu yang hilang  
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/1d689bfe-9e71-4f8f-8840-7b1fc2a1bdfa">
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/c7a18f30-28e3-4955-8617-f2f6a7879367">
 
