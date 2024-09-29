@@ -25,7 +25,7 @@ tombol masuk dan daftar akan hilang dan tombol profile akan muncul jika anda ber
 ### keranjang dan favorit
 **DISCLAIMER:** Fitur ini hanya gambaran bukan fitur keranjang atau favorite asli  
 jika anda masih di page yang belum login ketika anda click tombol keranjang atau favorit akan memunculkan pop up login jika anda sudah berada pada page yang sudah login  
-maka tombol akan berubah warna menjadi hijau
+maka tombol akan berubah warna menjadi hijau  
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/2de224df-8174-4a98-a72e-952a1a5dc279">  
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/b4b52a06-5cc0-4715-a021-3ab636b46d58">
 
