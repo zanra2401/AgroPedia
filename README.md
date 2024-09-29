@@ -1,4 +1,4 @@
-# AgroPedia
+![image](https://github.com/user-attachments/assets/e29ac51c-f609-4582-ba6f-37bf76b63079)# AgroPedia
 
 ## Cara menjalankan website di local 
 - Unduh source code nya di computer anda: bisa langsung mengunduhnya di github repo ini atau clone repo ini dengan `git clone https://github.com/zanra2401/AgroPedia.git`  
@@ -42,10 +42,59 @@ masukan input yang anda inginkan di box input untuk mencari items yang anda cari
 anda bisa melakukan filter, anda dapat memilih items apa yang ingin anda tampilkan  
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/4dec8316-023f-4b4e-b4b2-1d87fa488203">
 
-### Lihat item
+### Lihat item  
 anda bisa melihat detail item yang tersedia  
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/4a4a2dd8-3923-42f7-a52a-096233b0eb87">
 <img width="512" alt="image" src="https://github.com/user-attachments/assets/e301d089-c3c4-48d2-8ca4-9811e0c6051f">
+
+
+## Jumlah Stok
+Discalaimer : ini adalah gambaran fitur stok  
+Disini  adalah gambaran stok yang tersedia dalam suatu produk   
+
+![image](https://github.com/user-attachments/assets/7f2d352a-bcab-47b3-9e43-3770b5c557d9)
+
+
+
+## masukan keranjang dan beli sekarang
+Discalaimer : ini adalah gambaran fitur masukan keranjang dan beli sekarang bukan fitur masukan keranjang dan beli sekarang asli.  
+Jika anda menekan tombol masukan keranjang atau beli sekarang tidak akan terjadi apa” pada website  
+
+ 
+![image](https://github.com/user-attachments/assets/c269feb1-18f1-430d-83fd-8143446c2ad7)
+
+
+
+### ulasan
+Disclaimer : ini adalah gambarranfitur ulasan bukan fitur ulasan asli  
+Anda bisa melihat hasil ulasan dari produk yang anda pilih .  
+ 
+![image](https://github.com/user-attachments/assets/20062d6e-314a-47d2-989a-fa9a3b1f4a2f)
+
+
+
+
+### cari bacaan di halaman baca
+masukan input yang anda inginkan di box input untuk mencari informasi yang ingin anda cari.jika mencari informasi yang tidak tersedia akan ditampilkan ilustrasi not found    
+
+![image](https://github.com/user-attachments/assets/9880544a-5c2d-4c1c-9f2e-d9759b993dc0)
+![image](https://github.com/user-attachments/assets/02fff0ed-0752-4288-8497-e57bfa558379)
+
+
+ ## Baca
+Anda dapat melihat informasi lebih lengkap jika menekan tombol baca  
+ 
+![image](https://github.com/user-attachments/assets/e583e3bf-33b5-42c6-a6a1-3a73e1486f48)
+
+ 
+
+## Like pada halaman baca
+Disclaimer: fitur ini hanyalah gambaran fitur like bukan fitur like asli .  
+Jika anda menekan tombol like pada informasi tombol akan berubah warna menjadi hijau dan akan bertambah secara statis.  
+
+![image](https://github.com/user-attachments/assets/53a01b9c-17d8-4705-99fc-97c3d06a4edc)
+
+ 
 
 
 
